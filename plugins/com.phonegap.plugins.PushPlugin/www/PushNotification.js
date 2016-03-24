@@ -68,11 +68,13 @@ PushNotification.prototype.setApplicationIconBadgeNumber = function(successCallb
 
 //-------------------------------------------------------------------
 
-if(!window.plugins) {
+/*if(!window.plugins) {
     window.plugins = {};
 }
+*/
 if (!window.plugins.pushNotification) {
-    window.plugins.pushNotification = new PushNotification();
+    //window.plugins.pushNotification = new PushNotification();
+    cordova.require("com.phonegap.plugins.pushplugin") = new PushNotification();
 }
 
 if (typeof module != 'undefined' && module.exports) {
