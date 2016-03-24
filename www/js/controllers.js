@@ -1,4 +1,4 @@
-var url = 'http://54.169.14.22';
+var url = 'http://chartering-shipbrokers.com';
 var Search_Time_Out;
 var stopnoti = false;
 var promise;
