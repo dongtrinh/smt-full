@@ -227,7 +227,7 @@ app.controller('AppCtrl', function($state, $scope, $cordovaPush, $cordovaDialogs
     // Notification Received
     $scope.$on('notificationReceived', function (event,notification) {
         if (ionic.Platform.isAndroid()) {
-			handleAndroid(notification)
+			//handleAndroid(notification)
         }
         else if (ionic.Platform.isIOS()) {
             handleIOS(notification);
