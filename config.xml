@@ -15,7 +15,9 @@
   <preference name="BackupWebStorage" value="none"/>
   <preference name="SplashScreen" value="screen"/>
   <preference name="SplashScreenDelay" value="3000"/>
+  <!--
   <plugin name="com.phonegap.plugins.pushplugin" source="pgb" spec="2.5.0" />
+  -->
   <feature name="StatusBar">
     <param name="ios-package" value="CDVStatusBar" onload="true"/>
   </feature>
