@@ -67,7 +67,7 @@ PushNotification.prototype.setApplicationIconBadgeNumber = function(successCallb
 };
 
 //-------------------------------------------------------------------
-/*
+
 if(!window.plugins) {
     window.plugins = {};
 }
@@ -77,4 +77,4 @@ if (!window.plugins.pushNotification) {
 
 if (typeof module != 'undefined' && module.exports) {
   module.exports = PushNotification;
-}*/
+}
