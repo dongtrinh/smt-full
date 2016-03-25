@@ -227,7 +227,7 @@ app.controller('AppCtrl', function($state, $scope, $cordovaPush, $cordovaDialogs
     // Notification Received
     $scope.$on('notificationReceived', function (event,notification) {
         if (ionic.Platform.isAndroid()) {
-			//handleAndroid(notification)
+			handleAndroid(notification)
         }
         else if (ionic.Platform.isIOS()) {
             handleIOS(notification);
@@ -275,10 +275,9 @@ app.controller('AppCtrl', function($state, $scope, $cordovaPush, $cordovaDialogs
 			
 			if($state.current.name!="notify")
 			{
-				/*
 				window.plugin.notification.local.on('click', function (notification,event) {
 					$state.go("notify");
-				});*/
+				});
 				
 				$timeout.cancel(promise);
 				promise = $timeout(function()
