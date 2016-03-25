@@ -275,9 +275,10 @@ app.controller('AppCtrl', function($state, $scope, $cordovaPush, $cordovaDialogs
 			
 			if($state.current.name!="notify")
 			{
+				/*
 				window.plugin.notification.local.on('click', function (notification,event) {
 					$state.go("notify");
-				});
+				});*/
 				
 				$timeout.cancel(promise);
 				promise = $timeout(function()
